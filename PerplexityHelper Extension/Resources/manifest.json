@@ -1,0 +1,25 @@
+{
+  "name": "Perplexity Two-Tab Helper",
+  "description": "Send selected text or page URL to Perplexity.ai in a dedicated tab.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Ask Perplexity",
+    "default_icon": "images/icon-48.png"
+  },
+  "background": { "service_worker": "bg.js" },
+  "permissions": [ "activeTab", "tabs", "scripting" ],
+  "host_permissions": [ "*://*/*" ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "mac": "Shift+Command+P"
+      },
+      "description": "Ask Perplexity about this page"
+    }
+  }
+}
+
+
+
+
